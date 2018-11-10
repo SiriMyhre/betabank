@@ -1,0 +1,10 @@
+<h1>All boulders</h1>
+<% @boulders.each do |boulder| %>
+  <h2><%= boulder.name %></h2>
+  <p><%= boulder.grade %></p>
+  <p>m<%= boulder.position_min %>s<%= boulder.position_sec %></p>
+  <%=get_video_iframe(boulder) %>
+<% end %>
+
+
+
