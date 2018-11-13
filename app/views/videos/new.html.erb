@@ -1,0 +1,15 @@
+<h1 class="text-center">Add video for <%= @boulder.name %></h1>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+      <%= simple_form_for [@boulder, @video] do |v| %>
+      <%= v.input :link, placeholder: "write link" %>
+      <%= v.input :position_min, placeholder: "what minutes" %>
+      <%= v.input :position_sec, placeholder: "what seconds?" %>
+      <%= v.submit "Post video", class: "btn btn-primary" %>
+      <% end  %>
+
+
+    </div>
+  </div>
+</div>

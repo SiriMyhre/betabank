@@ -1,0 +1,17 @@
+<h1>This is boulder:</h1>
+<h2><%= @boulder.name %></h2>
+<h2><%= @boulder.grade %></h2>
+
+<ul>
+<% @boulder.videos.each do |video|%>
+  <li><%= video.link %></li>
+  <li><%= video.position_min %></li>
+  <li><%= video.position_sec %></li>
+<% end %>
+</ul>
+<%= link_to "Back", boulders_path %>
+<%= link_to "Add a new video", new_boulder_video_path(@boulder) %>
+
+
+
+

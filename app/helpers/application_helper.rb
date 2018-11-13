@@ -11,8 +11,6 @@
 # Thanks to https://stackoverflow.com/a/27878890/1498118
 module ApplicationHelper
 
-   require 'net/http'
-
   # Regex to find YouTube's and Vimeo's video ID
   YOUTUBE_REGEX = %r(^(http[s]*:\/\/)?(www.)?(youtube.com|youtu.be)\/(watch\?v=){0,1}([a-zA-Z0-9_-]{11}))
   VIMEO_REGEX = %r(^https?:\/\/(?:.*?)\.?(vimeo)\.com\/(\d+).*$)
