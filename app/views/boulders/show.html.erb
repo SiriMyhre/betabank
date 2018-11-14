@@ -7,10 +7,13 @@
   <li><%= video.link %></li>
   <li><%= video.position_min %></li>
   <li><%= video.position_sec %></li>
+  <li><%=get_video_iframe(video) %></li>
 <% end %>
 </ul>
 <%= link_to "Back", boulders_path %>
 <%= link_to "Add a new video", new_boulder_video_path(@boulder) %>
+
+
 
 
 

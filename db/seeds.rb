@@ -51,33 +51,35 @@ Video.destroy_all
 puts 'Creating boulders...'
 video_attributes = [
   {
-    name: "Le Flipper",
-    grade: "7A+",
     position_min: "21",
     position_sec: "50",
-    link: "https://vimeo.com/111277558"
+    link: "https://vimeo.com/111277558",
+    boulder_id: Boulder.find_by(name: "Le Flipper").id
   },
   {
-    name: "Duel dans la lune",
-    grade: "6c",
     position_min: "00",
     position_sec: "00",
-    link: "https://vimeo.com/89820845"
+    link: "https://vimeo.com/89820845",
+    boulder_id: Boulder.find_by(name: "Duel dans la lune").id
   },
   {
-    name: "Indestructible",
-    grade: "7a+",
     position_min: "00",
     position_sec: "00",
-    link: "https://vimeo.com/23152816"
+    link: "https://vimeo.com/23152816",
+    boulder_id: Boulder.find_by(name: "Indestructible").id
   },
   {
-    name: "Egoiste assis",
-    grade: "7a+",
     position_min: "07",
     position_sec: "35",
-    link: "https://www.youtube.com/watch?v=9tEjvZsCSyk"
+    link: "https://www.youtube.com/watch?v=9tEjvZsCSyk",
+    boulder_id: Boulder.find_by(name: "Egoiste assis").id
+  },
+  {
+    position_min: "35",
+    position_sec: "40",
+    link: "https://vimeo.com/111277558",
+    boulder_id: Boulder.find_by(name: "Egoiste assis").id
   },
 ]
-Boulder.create!(boulder_attributes)
+Video.create!(video_attributes)
 puts 'Finished!'
