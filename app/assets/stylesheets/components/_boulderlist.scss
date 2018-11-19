@@ -1,0 +1,39 @@
+.all {
+  padding: 40px;
+}
+
+.boulderdetails {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid rgba(220,224,244,0.4);
+}
+.bouldername {
+  padding-left: 10px;
+  min-width: 150px;
+}
+
+.bouldername h3 {
+  font-size: 13px;
+  color: $brand-success;
+}
+
+.cragname {
+  flex-grow: 1;
+  padding-left: 10px;
+}
+.cragname h4 {
+  font-size: 13px;
+  color: $brand-info;
+}
+
+.grade {
+  padding-left: 10px;
+}
+
+.grade h4 {
+  padding-left: 10px;
+  font-size: 13px;
+  color: $brand-info;
+}
+
